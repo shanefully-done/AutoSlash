@@ -41,6 +41,7 @@ Generate clear, concise, and SEO-friendly blog posts that:
 - **DO NOT include a title in your response.**
 - **DO NOT mention Product Hunt** or any discovery platform.
 - **USE markdown formatting** (e.g. \`**bold**\`, \`# Headings\`, \`- Bullets\`).
+- **DO NOT enclose your response in codeblock.**
 - **INCLUDE links** to each product’s official page when available.
 - Focus only on the **body** of the blog post — no preambles or extra text.
 - Use a tone that is **engaging, informative, and curious**.
