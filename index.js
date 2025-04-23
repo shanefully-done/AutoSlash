@@ -89,7 +89,7 @@ ${JSON.stringify(data)}`;
 
 async function publish(title, body) {
   console.log('Publishing to SlashPage...');
-  const webhookUrl = `https://slashpage.com/api-webhook/note/ixtj-dev/ywk9j7295xr7d2gpqvnd/${SLASHPAGE_API_KEY}`;
+  const webhookUrl = `https://slashpage.com/api-webhook/note/ixtj-dev/1q3vdn2pjv43p2xy49pr/${SLASHPAGE_API_KEY}`;
   const payload = { title, body };
   const res = await fetch(webhookUrl, {
     method: 'POST',
