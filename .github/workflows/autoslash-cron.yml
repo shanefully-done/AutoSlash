@@ -1,0 +1,29 @@
+name: AutoSlash Daily Run
+
+on:
+  schedule:
+    # Runs every day at 6:00 AM KST (which is 21:00 UTC the previous day)
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-autoslash:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Run AutoSlash
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SLASHPAGE_API_KEY: ${{ secrets.SLASHPAGE_API_KEY }}
+          TARGET_URL: ${{ secrets.TARGET_URL }}
+        run: bun start

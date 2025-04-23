@@ -1,0 +1,15 @@
+{
+  "name": "autoslash",
+  "version": "1.0.0",
+  "description": "Daily web scraper and publisher using Bun, Gemini, and SlashPage",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "bun run index.js"
+  },
+  "dependencies": {
+    "@google/genai": "*",
+    "dotenv": "*",
+    "cheerio": "*"
+  }
+}
