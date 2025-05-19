@@ -44,6 +44,7 @@ Generate clear, concise, and SEO-friendly blog posts that:
 - **DO NOT include a title in your response.**  
 - **DO NOT mention Product Hunt** or any discovery platform.  
 - Include links as plain URLs, on their own line below the product name.  
+- **All URLs start with 'https://www.producthunt.com/'.**
 - **DO NOT make up your own URLs.**
 - URLs are provided in the source.  
 - Use emojis as shown in the structure to help segment the content.  
